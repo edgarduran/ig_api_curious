@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
-  get "/", to: 'landing#index'
-  get '/auth/instagram', as: :login
+  get "/",                        to: 'landing#index'
+  get '/auth/instagram',          as: :login
   get '/auth/instagram/callback', to: 'sessions#create'
-  get '/logout', to: 'sessions#destroy'
+  get '/logout',                  to: 'sessions#destroy'
 
-  resources :profile, only: [:index]
+  resources :profile,   only: [:index]
+  resources :followers, only: [:index]
 end

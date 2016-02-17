@@ -14,7 +14,6 @@ class InstagramService
   end
 
   def current_user_info
-    binding.pry
     parse_json(connection.get("users/self/?access_token=#{user_token}"))
   end
 
@@ -23,6 +22,7 @@ class InstagramService
   end
 
   def liked
+    # Get the list of recent media liked by the owner of the access_token.
     # GET /users/self/media/liked
   end
 
@@ -31,11 +31,11 @@ class InstagramService
   end
 
   def following
-    # GET users/self/follows?access_token=ACCESS-TOKEN
+    parse_json(connection.get("users/self/follows?access_token=#{user_token}"))
   end
 
   def followers
-    # GET users/self/followed-by?access_token=ACCESS-TOKEN
+    parse_json(connection.get("users/self/followed-by?access_token=#{user_token}"))
   end
 
   def comments
@@ -43,6 +43,7 @@ class InstagramService
   end
 
   def liked_post
+    # Get a list of users who have liked this media.
     # GET media/{media-id}/likes?access_token=ACCESS-TOKEN
   end
 
