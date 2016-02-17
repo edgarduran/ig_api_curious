@@ -27,6 +27,7 @@ gem 'figaro'
 gem 'instagram'
 gem 'rails_12factor'
 gem 'pry-rails'
+gem 'faraday'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
