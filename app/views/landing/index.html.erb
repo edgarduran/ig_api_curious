@@ -1,2 +1,18 @@
-<h1>Welcome to Delaygram</h1>
-<%= link_to "Login with Instagram", login_path, class: "btn" %>
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="jumbotron hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-push-6 phone-preview">
+                    <div class="iphone-mockup"></div><%= image_tag "instagram-logo.gif", width: "400" %></div>
+                <div class="col-md-6 col-md-pull-4 get-it">
+                    <h1>Welcome to Delaygram</h1>
+                    <p>Way worse than Instagram</p><a class="btn btn-primary btn-lg show" role="button" href="<%= login_path %>" >Login w Instagram</a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

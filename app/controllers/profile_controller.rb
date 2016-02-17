@@ -8,4 +8,5 @@ class ProfileController < ApplicationController
   def instagram_service
     InstagramService.new(current_user.token, current_user.uid)
   end
+
 end
