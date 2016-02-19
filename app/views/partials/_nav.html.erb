@@ -5,9 +5,11 @@
         </div>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav navbar-right">
+              <% if current_user %>
                 <li role="presentation"><%= link_to "Profile", profile_index_path %></li>
                 <li role="presentation"><%= link_to "Followers", followers_path %></li>
                 <li role="presentation"><%= link_to "Logout", logout_path %></li>
+              <% end %>
             </ul>
         </div>
     </div>

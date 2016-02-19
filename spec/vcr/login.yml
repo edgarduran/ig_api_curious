@@ -1,0 +1,186 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/users/self/?access_token=2126510311.23fb4b6.c52eaa4ebef547b588e4a5be3e3fbb1c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '491'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 01:45:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=caff47cfe7d5703a0822596b4ef75b5b; expires=Fri, 17-Feb-2017 01:45:06
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 02:45:06 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC94cabb3a3c5039db617408137d8081365a4b3d62920c9b55cd24b2fc3d2bde83%3A8uCCNVujLwWVHBFbEvuD18S1hbn2vJFN%3A%7B%22asns%22%3A%7B%2273.153.92.210%22%3A7922%2C%22time%22%3A1455846306%7D%7D;
+        expires=Thu, 19-May-2016 01:45:06 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '230'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": {"username": "edgarduran303", "bio":
+        "", "website": "", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "full_name": "Edgar Duran", "counts": {"media": 7, "followed_by": 88, "follows":
+        97}, "id": "2126510311"}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 01:45:06 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/users/2126510311/media/recent/?access_token=2126510311.23fb4b6.c52eaa4ebef547b588e4a5be3e3fbb1c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '490'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 01:45:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=00d28b22b381ce6dc4989457862124ec; expires=Fri, 17-Feb-2017 01:45:07
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 02:45:07 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSCe8afbd982b9af49068aa5783184384ec58d96983901dfb44958af8b10db3fbde%3ACu38VaYfOYI9me5iADk0ad0JVvq3qixE%3A%7B%22asns%22%3A%7B%2273.153.92.210%22%3A7922%2C%22time%22%3A1455846307%7D%7D;
+        expires=Thu, 19-May-2016 01:45:07 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1350'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {}, "meta": {"code": 200}, "data": [{"attribution":
+        null, "tags": ["milehigh"], "type": "image", "location": null, "comments":
+        {"count": 0}, "filter": "Normal", "created_time": "1435202706", "link": "https://www.instagram.com/p/4VkKKCBOBL/",
+        "likes": {"count": 33}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/11335176_1675497599350350_1136955419_n.jpg?ig_cache_key=MTAxNDg3NjMxODY4MjM3NDIxOQ%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/11335176_1675497599350350_1136955419_n.jpg?ig_cache_key=MTAxNDg3NjMxODY4MjM3NDIxOQ%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/11335176_1675497599350350_1136955419_n.jpg?ig_cache_key=MTAxNDg3NjMxODY4MjM3NDIxOQ%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": {"created_time":
+        "1435202706", "text": "Sunset after the rain \n#milehigh", "from": {"username":
+        "edgarduran303", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}, "id": "1014876326651551886"},
+        "user_has_liked": false, "id": "1014876318682374219_2126510311", "user": {"username":
+        "edgarduran303", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": null, "comments": {"count": 1}, "filter":
+        "Normal", "created_time": "1434924303", "link": "https://www.instagram.com/p/4NRJYrBOMp/",
+        "likes": {"count": 8}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/11386441_875287285892037_1495621089_n.jpg?ig_cache_key=MTAxMjU0MDkwMjk4NTc1MzM4NQ%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/11386441_875287285892037_1495621089_n.jpg?ig_cache_key=MTAxMjU0MDkwMjk4NTc1MzM4NQ%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/11386441_875287285892037_1495621089_n.jpg?ig_cache_key=MTAxMjU0MDkwMjk4NTc1MzM4NQ%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": {"created_time":
+        "1434924303", "text": "Father''s day ride", "from": {"username": "edgarduran303",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}, "id": "1012540904218878899"},
+        "user_has_liked": false, "id": "1012540902985753385_2126510311", "user": {"username":
+        "edgarduran303", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": null, "comments": {"count": 1}, "filter":
+        "Lark", "created_time": "1433534162", "link": "https://www.instagram.com/p/3j1qZKhOGY/",
+        "likes": {"count": 8}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/11426360_724668910988598_1554917902_n.jpg?ig_cache_key=MTAwMDg3OTU1MTkwOTUxOTc2OA%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/11426360_724668910988598_1554917902_n.jpg?ig_cache_key=MTAwMDg3OTU1MTkwOTUxOTc2OA%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/11426360_724668910988598_1554917902_n.jpg?ig_cache_key=MTAwMDg3OTU1MTkwOTUxOTc2OA%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": null, "user_has_liked":
+        false, "id": "1000879551909519768_2126510311", "user": {"username": "edgarduran303",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}}, {"attribution": null, "tags":
+        ["beer"], "type": "image", "location": null, "comments": {"count": 4}, "filter":
+        "Normal", "created_time": "1433534052", "link": "https://www.instagram.com/p/3j1dBOBOF2/",
+        "likes": {"count": 7}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/11358088_1581104962154875_1426554193_n.jpg?ig_cache_key=MTAwMDg3ODYzMjg0NTIzODY0Ng%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/11358088_1581104962154875_1426554193_n.jpg?ig_cache_key=MTAwMDg3ODYzMjg0NTIzODY0Ng%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/11358088_1581104962154875_1426554193_n.jpg?ig_cache_key=MTAwMDg3ODYzMjg0NTIzODY0Ng%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": {"created_time":
+        "1433534052", "text": "Roll model\n#Beer", "from": {"username": "edgarduran303",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}, "id": "1000878634053198191"},
+        "user_has_liked": false, "id": "1000878632845238646_2126510311", "user": {"username":
+        "edgarduran303", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": null, "comments": {"count": 0}, "filter":
+        "Normal", "created_time": "1433459826", "link": "https://www.instagram.com/p/3hn4SoBOE4/",
+        "likes": {"count": 3}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/l/t51.2885-15/s320x320/e15/11376567_1380908195549636_362799249_n.jpg?ig_cache_key=MTAwMDI1NTk4NDM1NjM1MjMxMg%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/l/t51.2885-15/s150x150/e15/11376567_1380908195549636_362799249_n.jpg?ig_cache_key=MTAwMDI1NTk4NDM1NjM1MjMxMg%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/l/t51.2885-15/e15/11376567_1380908195549636_362799249_n.jpg?ig_cache_key=MTAwMDI1NTk4NDM1NjM1MjMxMg%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": {"created_time":
+        "1433459826", "text": "This is how hot it is in Florida", "from": {"username":
+        "edgarduran303", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}, "id": "1000255985463648982"},
+        "user_has_liked": false, "id": "1000255984356352312_2126510311", "user": {"username":
+        "edgarduran303", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}}, {"attribution": null, "tags":
+        ["memories"], "type": "image", "location": null, "comments": {"count": 1},
+        "filter": "Lark", "created_time": "1433127329", "link": "https://www.instagram.com/p/3XtsNKhOOR/",
+        "likes": {"count": 5}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/11251793_1460191144273689_79863404_n.jpg?ig_cache_key=OTk3NDY2NzkyMzcwOTU1MTUz.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/11251793_1460191144273689_79863404_n.jpg?ig_cache_key=OTk3NDY2NzkyMzcwOTU1MTUz.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/11251793_1460191144273689_79863404_n.jpg?ig_cache_key=OTk3NDY2NzkyMzcwOTU1MTUz.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": {"created_time":
+        "1433127329", "text": "Move out day! See you later\n#memories", "from": {"username":
+        "edgarduran303", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}, "id": "997466793469862135"},
+        "user_has_liked": false, "id": "997466792370955153_2126510311", "user": {"username":
+        "edgarduran303", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": null, "comments": {"count": 0}, "filter":
+        "Normal", "created_time": "1432313306", "link": "https://www.instagram.com/p/2_dEN5BOMm/",
+        "likes": {"count": 5}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/11374607_416829395168197_2047031713_n.jpg?ig_cache_key=OTkwNjM4Mjc2MTg2NzkyNzQy.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/11374607_416829395168197_2047031713_n.jpg?ig_cache_key=OTkwNjM4Mjc2MTg2NzkyNzQy.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e15/11374607_416829395168197_2047031713_n.jpg?ig_cache_key=OTkwNjM4Mjc2MTg2NzkyNzQy.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": null, "user_has_liked":
+        false, "id": "990638276186792742_2126510311", "user": {"username": "edgarduran303",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 01:45:07 GMT
+recorded_with: VCR 3.0.1
